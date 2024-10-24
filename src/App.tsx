@@ -147,9 +147,9 @@ function App() {
           </div>
         </div>
       </div>
-      <footer>
+      <div class="footer">
               <a href="./privacy.html" class="privacy-link">Privacy Policy - How To Use</a>
-     </footer>
+     </div>
     </div>
   );
 }
