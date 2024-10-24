@@ -143,6 +143,9 @@ function App() {
                 <Download className="w-6 h-6" />
                 Get it on Google Play
               </a>
+              <footer>
+              <a href="./privacy.html" class="privacy-link">Privacy Policy - How To Use</a>
+              </footer>
             </div>
           </div>
         </div>
