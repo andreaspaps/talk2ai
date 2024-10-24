@@ -52,10 +52,10 @@ function App() {
         
         <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 text-transparent bg-clip-text animate-fade-in">
-            Free AI Chatbot & Image Creator
+            Free AI Chatbot & Image Generator
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto animate-fade-in">
-            Free AI chat bot with voice conversations and free AI image generator - No ads!
+            Free AI chat bot with voice conversations and free AI image creator - No Registration - No ads!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in">
             <a
@@ -86,12 +86,12 @@ function App() {
               {
                 icon: <Sparkles className="w-12 h-12 text-purple-400" />,
                 title: "100% Free Forever",
-                description: "No subscriptions, no in-app purchases, and absolutely no ads. Enjoy unlimited conversations and image generation.",
+                description: "No subscriptions, no registration, no in-app purchases, and absolutely no ads. Enjoy unlimited AI conversations and image generation.",
               },
               {
                 icon: <Bot className="w-12 h-12 text-blue-400" />,
                 title: "Customizable Personas",
-                description: "Choose from multiple AI personalities or create your own custom personas with adjustable traits.",
+                description: "Choose any known personality style or create your own custom personas with adjustable traits.",
               },
               {
                 icon: <Brain className="w-12 h-12 text-pink-400" />,
