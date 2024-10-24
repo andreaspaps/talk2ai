@@ -148,7 +148,7 @@ function App() {
         </div>
       </div>
       <div class="footer">
-              <a routerLink="/my-page" class="privacy-link">Privacy Policy - How To Use</a>
+              <a routerLink="/privacy-policy" class="privacy-link">Privacy Policy - How To Use</a>
      </div>
     </div>
   );
