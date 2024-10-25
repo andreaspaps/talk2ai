@@ -14,7 +14,6 @@ function App() {
   const featuresRef = useRef(null);
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // Sample images - replace with your actual screenshot URLs
   const sliderImages = [
     "/api/placeholder/280/580",
     "/api/placeholder/280/580",
@@ -26,7 +25,6 @@ function App() {
     featuresRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  // Image slider auto-play
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % sliderImages.length);
@@ -35,7 +33,6 @@ function App() {
     return () => clearInterval(interval);
   }, []);
 
-  // Intersection Observer for animations
   useEffect(() => {
     const observerOptions = {
       threshold: 0.1,
@@ -69,10 +66,10 @@ function App() {
           opacity: 0.1
         }} />
         
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-6 md:px-8 lg:px-12 relative z-10 max-w-7xl">
           <div className="flex flex-col lg:flex-row items-center gap-12 py-20">
             {/* Text Content */}
-            <div className="flex-1 text-center lg:text-left">
+            <div className="flex-1 text-center lg:text-left lg:pl-4">
               <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 text-transparent bg-clip-text animate-fade-in">
                 Free AI Chatbot & Image Generator
               </h1>
@@ -96,7 +93,7 @@ function App() {
             </div>
 
             {/* Mobile Phone Frame with Slider */}
-            <div className="flex-1 flex justify-center items-center animate-fade-in">
+            <div className="flex-1 flex justify-center items-center animate-fade-in lg:pr-4">
               <div className="relative w-[320px] h-[640px] rounded-[3rem] bg-gray-800 p-4 shadow-xl">
                 {/* Phone Frame */}
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-black rounded-b-2xl" />
@@ -142,7 +139,7 @@ function App() {
 
       {/* Features Section */}
       <div ref={featuresRef} className="py-20 bg-gray-900">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
@@ -192,7 +189,7 @@ function App() {
 
       {/* Download Section */}
       <div id="download" className="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
-        <div className="container mx-auto px-4 text-center">
+        <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-7xl text-center">
           <div className="animate-on-scroll opacity-0">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
               Download Now for Unlimited AI Chat and Image Creation
