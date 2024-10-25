@@ -9,13 +9,17 @@ export default defineConfig({
       targets: [
         {
           src: 'src/privacy.html',
-          dest: ''
+          dest: '' // Copies privacy.html to the root of the output directory
         },
         {
-          src: 'src/_redirects', // Ensure this line is only included if the file exists
-          dest: ''
+          src: 'src/_redirects', // Ensure this line includes your _redirects file
+          dest: '' // Copies _redirects to the root of the output directory
         }
       ]
     })
-  ]
+  ],
+  build: {
+    // Specify your output directory if different
+    outDir: 'dist' // Default output directory for Vite
+  }
 });
