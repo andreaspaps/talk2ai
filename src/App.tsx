@@ -14,12 +14,18 @@ function App() {
   const featuresRef = useRef(null);
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const sliderImages = [
-    "/api/placeholder/280/580",
-    "/api/placeholder/280/580",
-    "/api/placeholder/280/580",
-    "/api/placeholder/280/580"
-  ];
+  import image1 from './images/1.jpg';
+  import image2 from './images/2.jpg';
+  import image3 from './images/3.jpg';
+  import image4 from './images/4.jpg';
+
+// And use them in your sliderImages array:
+const sliderImages = [
+  image1,
+  image2,
+  image3,
+  image4
+];
 
   const scrollToFeatures = () => {
     featuresRef.current?.scrollIntoView({ behavior: 'smooth' });
