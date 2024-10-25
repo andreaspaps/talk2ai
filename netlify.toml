@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://talk2ai.netlify.app/*"
+  to = "https://freeaichat.app/:splat"
+  status = 301
+  force = true
