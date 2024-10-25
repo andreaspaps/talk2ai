@@ -8,8 +8,12 @@ export default defineConfig({
     viteStaticCopy({
       targets: [
         {
-          src: 'src/privacy.html',  // Source location of the file
-          dest: ''                  // Root of `dist`
+          src: 'src/privacy.html',
+          dest: ''
+        },
+        {
+          src: 'src/_redirects', // Ensure this line is only included if the file exists
+          dest: ''
         }
       ]
     })
