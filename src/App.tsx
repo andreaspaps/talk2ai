@@ -10,23 +10,17 @@ import {
   ChevronDown,
 } from 'lucide-react';
 
+import image1 from './images/1.jpg';
+import image2 from './images/2.jpg';
+import image3 from './images/3.jpg';
+import image4 from './images/4.jpg';
+
+// Use them in your sliderImages array:
+const sliderImages = [image1, image2, image3, image4];
+
 function App() {
   const featuresRef = useRef(null);
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [startX, setStartX] = useState(0);
-  const [isDragging, setIsDragging] = useState(false);
-
-  import image1 from './images/1.jpg';
-  import image2 from './images/2.jpg';
-  import image3 from './images/3.jpg';
-  import image4 from './images/4.jpg';
-
-  const sliderImages = [
-    image1,
-    image2,
-    image3,
-    image4,
-  ];
 
   const scrollToFeatures = () => {
     featuresRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -35,41 +29,10 @@ function App() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % sliderImages.length);
-    }, 4000); // Change this to 4000 for 4 seconds
+    }, 2000);
 
     return () => clearInterval(interval);
   }, []);
-
-  // Touch start event
-  const handleTouchStart = (e) => {
-    setStartX(e.touches[0].clientX);
-    setIsDragging(true);
-  };
-
-  // Touch move event
-  const handleTouchMove = (e) => {
-    if (!isDragging) return;
-
-    const currentX = e.touches[0].clientX;
-    const diffX = startX - currentX;
-
-    // If the swipe is greater than a certain threshold, change the slide
-    if (Math.abs(diffX) > 50) {
-      if (diffX > 0) {
-        // Swipe left
-        setCurrentSlide((prev) => (prev + 1) % sliderImages.length);
-      } else {
-        // Swipe right
-        setCurrentSlide((prev) => (prev - 1 + sliderImages.length) % sliderImages.length);
-      }
-      setIsDragging(false); // Reset dragging state
-    }
-  };
-
-  // Touch end event
-  const handleTouchEnd = () => {
-    setIsDragging(false);
-  };
 
   useEffect(() => {
     const observerOptions = {
@@ -134,18 +97,10 @@ function App() {
             <div className="flex-1 flex justify-center items-center animate-fade-in lg:pr-4">
               <div className="relative w-[320px] h-[640px] rounded-[3rem] bg-gray-800 p-4 shadow-xl">
                 {/* Phone Frame */}
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-6 bg-black rounded-b-2xl" />
-
-                {/* Camera Hole */}
-                <div className="absolute top-1 left-1/2 -translate-x-1/2 w-5 h-5 bg-gray-800 rounded-full border-2 border-white" />
-
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-black rounded-b-2xl" />
+                
                 {/* Screen Content */}
-                <div
-                  className="relative w-full h-full overflow-hidden rounded-[2rem] bg-white"
-                  onTouchStart={handleTouchStart} // Add touch start event
-                  onTouchMove={handleTouchMove} // Add touch move event
-                  onTouchEnd={handleTouchEnd} // Add touch end event
-                >
+                <div className="relative w-full h-full overflow-hidden rounded-[2rem] bg-white">
                   {/* Image Slider */}
                   <div 
                     className="flex transition-transform duration-500 ease-in-out h-full"
@@ -160,7 +115,18 @@ function App() {
                       />
                     ))}
                   </div>
-                  {/* Removed Slide Indicators */}
+
+                  {/* Slide Indicators */}
+                  <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
+                    {sliderImages.map((_, index) => (
+                      <div
+                        key={index}
+                        className={`w-2 h-2 rounded-full transition-colors duration-300 ${
+                          currentSlide === index ? 'bg-white' : 'bg-white/50'
+                        }`}
+                      />
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
@@ -233,6 +199,7 @@ function App() {
               <a
                 href="#"
                 className="flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full font-semibold text-lg hover:scale-105 transition-transform duration-300"
+                type="button" // Added button type
               >
                 <Download className="w-6 h-6" />
                 Get it on Google Play
@@ -243,11 +210,9 @@ function App() {
       </div>
 
       {/* Footer */}
-      <div className="py-8 text-center text-gray-400">
-        <a href="/privacy.html" className="hover:text-white transition-colors">
-          Privacy Policy - How To Use
-        </a>
-      </div>
+      <div class="footer">
+              <a href="/privacy.html">Privacy Policy - How To Use</a>
+     </div>
     </div>
   );
 }
