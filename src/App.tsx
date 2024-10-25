@@ -10,22 +10,17 @@ import {
   ChevronDown,
 } from 'lucide-react';
 
+import image1 from './images/1.jpg';
+import image2 from './images/2.jpg';
+import image3 from './images/3.jpg';
+import image4 from './images/4.jpg';
+
+// Use them in your sliderImages array:
+const sliderImages = [image1, image2, image3, image4];
+
 function App() {
   const featuresRef = useRef(null);
   const [currentSlide, setCurrentSlide] = useState(0);
-
-  import image1 from './images/1.jpg';
-  import image2 from './images/2.jpg';
-  import image3 from './images/3.jpg';
-  import image4 from './images/4.jpg';
-
-// And use them in your sliderImages array:
-const sliderImages = [
-  image1,
-  image2,
-  image3,
-  image4
-];
 
   const scrollToFeatures = () => {
     featuresRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -204,6 +199,7 @@ const sliderImages = [
               <a
                 href="#"
                 className="flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full font-semibold text-lg hover:scale-105 transition-transform duration-300"
+                type="button" // Added button type
               >
                 <Download className="w-6 h-6" />
                 Get it on Google Play
@@ -214,10 +210,8 @@ const sliderImages = [
       </div>
 
       {/* Footer */}
-      <div className="py-8 text-center text-gray-400">
-        <a href="/privacy.html" className="hover:text-white transition-colors">
-          Privacy Policy - How To Use
-        </a>
+      <div className="py-8 bg-gray-900 text-center">
+        <p className="text-gray-400">© 2024 Your App Name. All rights reserved.</p>
       </div>
     </div>
   );
