@@ -29,7 +29,7 @@ function App() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % sliderImages.length);
-    }, 2000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
