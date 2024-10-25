@@ -56,3 +56,8 @@
 .rounded-\[2rem\] {
     border-radius: 0.5rem;
 }
+
+
+.rounded-\[3rem\] {
+    border-radius: 2rem;
+}
