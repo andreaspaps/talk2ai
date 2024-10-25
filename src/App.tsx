@@ -94,46 +94,42 @@ function App() {
             </div>
 
             {/* Mobile Phone Frame with Slider */}
-<div className="flex-1 flex justify-center items-center animate-fade-in lg:pr-4">
-  <div className="relative w-[320px] h-[640px] rounded-[3rem] bg-gray-800 p-4 shadow-xl">
-    {/* Phone Frame without Notch */}
-    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-8 bg-black rounded-b-lg" />
+            <div className="flex-1 flex justify-center items-center animate-fade-in lg:pr-4">
+              <div className="relative w-[320px] h-[640px] rounded-[3rem] bg-gray-800 p-4 shadow-xl">
+                {/* Phone Frame */}
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-black rounded-b-2xl" />
+                
+                {/* Screen Content */}
+                <div className="relative w-full h-full overflow-hidden rounded-[2rem] bg-white">
+                  {/* Image Slider */}
+                  <div 
+                    className="flex transition-transform duration-500 ease-in-out h-full"
+                    style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+                  >
+                    {sliderImages.map((src, index) => (
+                      <img
+                        key={index}
+                        src={src}
+                        alt={`App Screenshot ${index + 1}`}
+                        className="w-full h-full object-cover flex-shrink-0"
+                      />
+                    ))}
+                  </div>
 
-    {/* Camera Hole */}
-    <div className="absolute top-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-black rounded-full" />
-
-    {/* Screen Content */}
-    <div className="relative w-full h-full overflow-hidden rounded-[2rem] bg-white">
-      {/* Image Slider */}
-      <div 
-        className="flex transition-transform duration-500 ease-in-out h-full"
-        style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-      >
-        {sliderImages.map((src, index) => (
-          <img
-            key={index}
-            src={src}
-            alt={`App Screenshot ${index + 1}`}
-            className="w-full h-full object-cover flex-shrink-0"
-          />
-        ))}
-      </div>
-
-      {/* Slide Indicators */}
-      <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
-        {sliderImages.map((_, index) => (
-          <div
-            key={index}
-            className={`w-2 h-2 rounded-full transition-colors duration-300 ${
-              currentSlide === index ? 'bg-white' : 'bg-white/50'
-            }`}
-          />
-        ))}
-      </div>
-    </div>
-  </div>
-</div>
-
+                  {/* Slide Indicators */}
+                  <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
+                    {sliderImages.map((_, index) => (
+                      <div
+                        key={index}
+                        className={`w-2 h-2 rounded-full transition-colors duration-300 ${
+                          currentSlide === index ? 'bg-white' : 'bg-white/50'
+                        }`}
+                      />
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         
