@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import {
   Bot,
   Image,
@@ -11,12 +11,31 @@ import {
 } from 'lucide-react';
 
 function App() {
-  const featuresRef = useRef<HTMLDivElement>(null);
+  const featuresRef = useRef(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  // Sample images - replace with your actual screenshot URLs
+  const sliderImages = [
+    "/api/placeholder/280/580",
+    "/api/placeholder/280/580",
+    "/api/placeholder/280/580",
+    "/api/placeholder/280/580"
+  ];
 
   const scrollToFeatures = () => {
     featuresRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  // Image slider auto-play
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % sliderImages.length);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  // Intersection Observer for animations
   useEffect(() => {
     const observerOptions = {
       threshold: 0.1,
@@ -41,35 +60,78 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-900 text-white">
       {/* Hero Section */}
-      <div className="relative h-screen flex items-center justify-center overflow-hidden">
+      <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900/30 via-blue-900/30 to-teal-900/30" />
         <div className="absolute inset-0" style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=2574')",
+          backgroundImage: "url('/api/placeholder/2574/1600')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           opacity: 0.1
         }} />
         
-        <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 text-transparent bg-clip-text animate-fade-in">
-            Free AI Chatbot & Image Generator
-          </h1>
-          <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto animate-fade-in">
-            Free AI chat bot app with voice conversations and free AI image creator - No Registration - No ads!
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in">
-            <a
-              href="#download"
-              className="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full font-semibold text-lg hover:scale-105 transition-transform duration-300 shadow-lg shadow-purple-500/25"
-            >
-              Download Now
-            </a>
-            <button
-              onClick={scrollToFeatures}
-              className="px-8 py-4 bg-white/10 backdrop-blur-sm rounded-full font-semibold text-lg hover:bg-white/20 transition-all duration-300"
-            >
-              Learn More
-            </button>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="flex flex-col lg:flex-row items-center gap-12 py-20">
+            {/* Text Content */}
+            <div className="flex-1 text-center lg:text-left">
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 text-transparent bg-clip-text animate-fade-in">
+                Free AI Chatbot & Image Generator
+              </h1>
+              <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl animate-fade-in">
+                Free AI chat bot app with voice conversations and free AI image creator - No Registration - No ads!
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12 animate-fade-in">
+                <a
+                  href="#download"
+                  className="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full font-semibold text-lg hover:scale-105 transition-transform duration-300 shadow-lg shadow-purple-500/25"
+                >
+                  Download Now
+                </a>
+                <button
+                  onClick={scrollToFeatures}
+                  className="px-8 py-4 bg-white/10 backdrop-blur-sm rounded-full font-semibold text-lg hover:bg-white/20 transition-all duration-300"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+
+            {/* Mobile Phone Frame with Slider */}
+            <div className="flex-1 flex justify-center items-center animate-fade-in">
+              <div className="relative w-[320px] h-[640px] rounded-[3rem] bg-gray-800 p-4 shadow-xl">
+                {/* Phone Frame */}
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-black rounded-b-2xl" />
+                
+                {/* Screen Content */}
+                <div className="relative w-full h-full overflow-hidden rounded-[2rem] bg-white">
+                  {/* Image Slider */}
+                  <div 
+                    className="flex transition-transform duration-500 ease-in-out h-full"
+                    style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+                  >
+                    {sliderImages.map((src, index) => (
+                      <img
+                        key={index}
+                        src={src}
+                        alt={`App Screenshot ${index + 1}`}
+                        className="w-full h-full object-cover flex-shrink-0"
+                      />
+                    ))}
+                  </div>
+
+                  {/* Slide Indicators */}
+                  <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
+                    {sliderImages.map((_, index) => (
+                      <div
+                        key={index}
+                        className={`w-2 h-2 rounded-full transition-colors duration-300 ${
+                          currentSlide === index ? 'bg-white' : 'bg-white/50'
+                        }`}
+                      />
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         
@@ -147,9 +209,13 @@ function App() {
           </div>
         </div>
       </div>
-      <div class="footer">
-              <a href="/privacy.html">Privacy Policy - How To Use</a>
-     </div>
+
+      {/* Footer */}
+      <div className="py-8 text-center text-gray-400">
+        <a href="/privacy.html" className="hover:text-white transition-colors">
+          Privacy Policy - How To Use
+        </a>
+      </div>
     </div>
   );
 }
