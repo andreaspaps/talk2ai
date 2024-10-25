@@ -115,18 +115,6 @@ function App() {
                       />
                     ))}
                   </div>
-
-                  {/* Slide Indicators */}
-                  <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
-                    {sliderImages.map((_, index) => (
-                      <div
-                        key={index}
-                        className={`w-2 h-2 rounded-full transition-colors duration-300 ${
-                          currentSlide === index ? 'bg-white' : 'bg-white/50'
-                        }`}
-                      />
-                    ))}
-                  </div>
                 </div>
               </div>
             </div>
