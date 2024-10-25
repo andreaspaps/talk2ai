@@ -52,3 +52,7 @@
   padding: 15px;
   text-align: center;
 }
+
+.rounded-\[2rem\] {
+    border-radius: 0.5rem;
+}
