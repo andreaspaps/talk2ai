@@ -137,16 +137,6 @@ function App() {
                 description: "No subscriptions, no registration, no in-app purchases, and absolutely no ads. Enjoy unlimited AI conversations and image generation.",
               },
               {
-                icon: <Bot className="w-12 h-12 text-blue-400" />,
-                title: "Customizable Personas",
-                description: "Choose any known personality style or create your own custom personas with adjustable traits.",
-              },
-              {
-                icon: <Brain className="w-12 h-12 text-pink-400" />,
-                title: "Persistent Memory",
-                description: "Advanced memory system for natural, context-aware conversations that remember your preferences.",
-              },
-              {
                 icon: <MessageSquare className="w-12 h-12 text-teal-400" />,
                 title: "Natural Conversations",
                 description: "Engage in fluid, context-aware conversations through text or voice with real-time responses.",
@@ -160,6 +150,16 @@ function App() {
                 icon: <Mic className="w-12 h-12 text-rose-400" />,
                 title: "Voice Interaction",
                 description: "Speak naturally with your AI companion using advanced voice recognition and synthesis.",
+              },
+              {
+                icon: <Bot className="w-12 h-12 text-blue-400" />,
+                title: "Customizable Personas",
+                description: "Choose any known personality style or create your own custom personas with adjustable traits.",
+              },
+              {
+                icon: <Brain className="w-12 h-12 text-pink-400" />,
+                title: "Persistent Memory",
+                description: "Advanced memory system for natural, context-aware conversations that remember your preferences.",
               },
             ].map((feature, index) => (
               <div
