@@ -185,7 +185,7 @@ function App() {
             </h2>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="#"
+                href="https://play.google.com/store/apps/details?id=com.aichatbot.free"
                 className="flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full font-semibold text-lg hover:scale-105 transition-transform duration-300"
                 type="button" // Added button type
               >
