@@ -134,7 +134,7 @@ function App() {
               {
                 icon: <Sparkles className="w-12 h-12 text-purple-400" />,
                 title: "100% Free Forever",
-                description: "No subscriptions, no registration, no in-app purchases, and absolutely no ads. Enjoy unlimited AI conversations and image generation.",
+                description: "No subscriptions, no registration, no in-app purchases, and absolutely no ads. Enjoy unlimited AI chat and image generation.",
               },
               {
                 icon: <MessageSquare className="w-12 h-12 text-teal-400" />,
