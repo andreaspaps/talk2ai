@@ -144,12 +144,12 @@ function App() {
               {
                 icon: <Image className="w-12 h-12 text-indigo-400" />,
                 title: "Image Generation",
-                description: "Create and refine any image you can imagine with unlimited high-quality generations.",
+                description: "Create and refine any image you can imagine with unlimited high-quality generations. Create art on the go.",
               },
               {
                 icon: <Mic className="w-12 h-12 text-rose-400" />,
                 title: "Voice Interaction",
-                description: "Speak naturally with your AI companion using advanced voice recognition and synthesis.",
+                description: "Speak naturally with your AI companion using advanced voice recognition and speech synthesis.",
               },
               {
                 icon: <Bot className="w-12 h-12 text-blue-400" />,
