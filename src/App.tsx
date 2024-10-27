@@ -139,7 +139,7 @@ function App() {
               {
                 icon: <MessageSquare className="w-12 h-12 text-teal-400" />,
                 title: "Natural Conversations",
-                description: "Engage in fluid, context-aware conversations through text or voice with real-time responses.",
+                description: "Engage in fluid, context-aware conversations through text or voice with real-time responses. Powered by the smartest artificial intelligence.",
               },
               {
                 icon: <Image className="w-12 h-12 text-indigo-400" />,
