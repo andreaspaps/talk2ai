@@ -158,8 +158,8 @@ function App() {
               },
               {
                 icon: <Brain className="w-12 h-12 text-pink-400" />,
-                title: "Persistent Memory",
-                description: "Advanced memory system for natural, context-aware conversations that remember your preferences.",
+                title: "Web Search",
+                description: "Search for current events like top news headlines, weather forecasts or any other current information.",
               },
             ].map((feature, index) => (
               <div
