@@ -157,9 +157,9 @@ function App() {
                 description: "Choose any known personality style or create your own custom personas with adjustable traits.",
               },
               {
-                icon: <Globe className="w-12 h-12 text-pink-400" />,
-                title: "Web Search",
-                description: "Search for current events, top news headlines, weather forecast or any other current information.",
+                icon: <Brain className="w-12 h-12 text-pink-400" />,
+                title: "Persistent Memory",
+                description: "Advanced memory system for natural, context-aware conversations that remember your preferences.",
               },
             ].map((feature, index) => (
               <div
