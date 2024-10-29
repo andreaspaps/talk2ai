@@ -17,7 +17,7 @@ import image4 from './images/4.jpg';
 import image5 from './images/5.jpg';
 
 // Use them in your sliderImages array:
-const sliderImages = [image1, image2, image3, image4];
+const sliderImages = [image1, image2, image3, image4, image5];
 
 function App() {
   const featuresRef = useRef(null);
