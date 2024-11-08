@@ -210,7 +210,7 @@ function App() {
       </div>
       {/* Text Content Section */}
 <div className="py-20 bg-gray-800">
-  <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-5xl text-gray-300">
+  <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-6xl text-gray-300">
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-lg md:text-2lg">
       <p className="mb-6">
         Imagine having a personal AI image creator and chatbot at your fingertips. Engage in seamless, natural conversations through text or voice, powered by the most advanced AI technology. Whether you’re chatting with a customizable personality or exploring stunning image creation, our app has you covered.
