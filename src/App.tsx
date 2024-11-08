@@ -135,7 +135,6 @@ function App() {
             </div>
           </div>
         </div>
-        
         <div className="absolute bottom-8 w-full text-center animate-bounce">
           <ChevronDown className="mx-auto w-8 h-8" />
         </div>
@@ -213,7 +212,12 @@ function App() {
           </p>
         </div>
       </div>
-
+      <div
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        className="absolute top-8 w-full text-center cursor-pointer animate-bounce"
+        >
+        <ChevronUp className="mx-auto w-8 h-8" />
+      </div>
       {/* Download Section */}
       <div ref={downloadRef} className="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
         <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-7xl text-center">
