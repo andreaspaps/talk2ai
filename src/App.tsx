@@ -152,7 +152,7 @@ function App() {
           <ChevronDown className="mx-auto w-8 h-8" />
         </div>
       </div>
-      <div className="py-20 bg-gray-800">
+      <div className="py-20">
       <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-5xl text-gray-300 text-center">
         <div className="text-xl md:text-2xl font-medium mb-2">
         Discover the ultimate free AI chatbot and image generator app - all for free! No sign-up, no advertisements, just pure creative freedom. Enjoy endless conversations and high-quality image generation anytime, anywhere!
