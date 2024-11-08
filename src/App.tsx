@@ -210,7 +210,7 @@ function App() {
       </div>
       {/* Text Content Section */}
 <div className="py-20 bg-gray-800 overflow-hidden">
-  <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-5xl text-gray-300">
+  <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-6xl text-gray-300">
     {/* Grid Layout */}
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-lg md:text-2lg">
       <p className="mb-6">
