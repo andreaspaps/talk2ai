@@ -235,7 +235,6 @@ function App() {
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
     />
 </div>
-
       {/* Download Section */}
       <div ref={downloadRef} className="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
         <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-3xl text-center">
@@ -246,7 +245,7 @@ function App() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="https://play.google.com/store/apps/details?id=com.aichatbot.free"
-                className="flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full font-semibold text-lg hover:scale-105 transition-transform duration-300"
+                className="flex items-center justify-center gap-5 px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full font-semibold text-lg hover:scale-105 transition-transform duration-300"
                 target="_blank"
               >
                 <Download className="w-6 h-6" />
@@ -256,7 +255,6 @@ function App() {
           </div>
         </div>
       </div>
-
       {/* Footer */}
       <div className="footer">
         <a href="/privacy.html">Privacy Policy - How To Use</a>
