@@ -22,6 +22,10 @@ export default defineConfig({
         {
           src: 'src/thumbnail.jpg', // Ensure this line includes your _redirects file
           dest: '' // Copies _redirects to the root of the output directory
+        },
+        {
+          src: 'src/netlify.toml', // Ensure this line includes your _redirects file
+          dest: '' // Copies _redirects to the root of the output directory
         }
       ]
     })

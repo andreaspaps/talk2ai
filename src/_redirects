@@ -1,5 +1,6 @@
 /robots.txt    /robots.txt   200
 /thumbnail.jpg    /thumbnail.jpg   200
+/netlify.toml    /netlify.toml   200
 /privacy.html  /privacy.html  200
 /*             /index.html    200
 https://talk2ai.netlify.app/* https://freeaichat.app/:splat 301!
