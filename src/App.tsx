@@ -144,7 +144,7 @@ function App() {
       <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-7xl text-gray-300 text-center">
         <h3 className="text-xl md:text-3xl font-semibold mb-2">
         Discover the ultimate AI chatbot and image creator app - all for free! No sign-up, no advertisements, just pure creative freedom. Enjoy endless conversations and high-quality image generation anytime, anywhere!
-          </h2>
+          </h3>
         </div>
       </div>
       {/* Features Section */}
