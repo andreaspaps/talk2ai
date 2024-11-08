@@ -226,10 +226,9 @@ function App() {
         Voice Interaction allows for a seamless and engaging dialogue, as you can speak naturally to your AI companion. The advanced voice recognition and speech synthesis ensure that every interaction feels fresh and personal.
       </p>
     </div>
-  </div>
-  
+  </div> 
   {/* Chevron for Scrolling */}
-  <div className="w-full text-center z-10 mt-8 overflow-hidden">
+  <div className="w-full text-center z-10 mt-5 overflow-hidden">
     <ChevronUp
       className="mx-auto w-8 h-8 text-white cursor-pointer animate-bounce"
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
