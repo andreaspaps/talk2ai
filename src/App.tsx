@@ -154,9 +154,9 @@ function App() {
       </div>
       <div className="py-20 bg-gray-800">
       <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-7xl text-gray-300 text-center">
-        <h3 className="text-xl md:text-3xl font-medium mb-2">
-        Discover the ultimate AI chatbot and image creator app - all for free! No sign-up, no advertisements, just pure creative freedom. Enjoy endless conversations and high-quality image generation anytime, anywhere!
-          </h3>
+        <div className="text-xl md:text-3xl font-medium mb-2">
+        Discover the ultimate free AI chatbot and image generator app - all for free! No sign-up, no advertisements, just pure creative freedom. Enjoy endless conversations and high-quality image generation anytime, anywhere!
+          </div>
         </div>
       </div>
       {/* Features Section */}
@@ -212,7 +212,7 @@ function App() {
       <div className="py-20 bg-gray-800">
         <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-7xl text-gray-300">
           <p className="mb-6">
-            Imagine having a personal AI art generator and chatbot at your fingertips. Engage in seamless, natural conversations through text or voice, powered by the most advanced AI technology. Whether you’re chatting with a customizable personality or exploring stunning image creation, our app has you covered.
+            Imagine having a personal AI image creator and chatbot at your fingertips. Engage in seamless, natural conversations through text or voice, powered by the most advanced AI technology. Whether you’re chatting with a customizable personality or exploring stunning image creation, our app has you covered.
           </p>
           <p className="mb-6">
             Voice Interaction allows for a seamless and engaging dialogue, as you can speak naturally to your AI companion. The advanced voice recognition and speech synthesis ensure that every interaction feels fresh and personal.
