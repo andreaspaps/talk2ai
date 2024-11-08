@@ -213,7 +213,7 @@ function App() {
   <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl text-gray-300 overflow-hidden">
     {/* Grid Layout */}
     <div className="grid grid-cols-1 md:grid-cols-2 gap-14 text-lg md:text-2lg">
-      <p className="mb-6">
+      <p className="mb-6 p-6 bg-gray-900 rounded-lg">
         Imagine having a personal AI image creator and chatbot at your fingertips. Engage in seamless, natural conversations through text or voice, powered by advanced AI technology. Whether you’re chatting with a custom personality or exploring stunning image creation, our app has you covered.
       </p>
       <p className="mb-6">
