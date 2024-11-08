@@ -212,11 +212,11 @@ function App() {
             Wondering what's happening in the world? Our AI integrates web searches allowing you to stay informed about the latest news, trending topics or even summarize a website, all within the same interface. It’s like having an intelligent friend at your fingertips!
           </p>
           </div>
-          <div
+          <div className="absolute w-full text-center z-10 mt-8">
+          <ChevronUp
+            className="mx-auto w-8 h-8 text-white cursor-pointer animate-bounce"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="absolute mt-8 w-full text-center cursor-pointer animate-bounce z-10"
-            >
-          <ChevronUp className="mx-auto w-8 h-8" />
+          />
         </div>
       </div>
       {/* Download Section */}
