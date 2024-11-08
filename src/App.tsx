@@ -16,15 +16,19 @@ import image3 from './images/3.jpg';
 import image4 from './images/4.jpg';
 import image5 from './images/5.jpg';
 
-// Use them in your sliderImages array:
 const sliderImages = [image1, image2, image3, image4, image5];
 
 function App() {
   const featuresRef = useRef(null);
+  const downloadRef = useRef(null);
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const scrollToFeatures = () => {
     featuresRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const scrollToDownload = () => {
+    downloadRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
   useEffect(() => {
@@ -76,15 +80,15 @@ function App() {
                 Free AI Chatbot & Image Generator
               </h1>
               <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl animate-fade-in">
-                Unlimited AI chat with voice conversations and high quality image generation - No Sing-Up - No ads!
+                Unlimited AI chat with voice conversations and high quality image generation - No Sign-Up - No ads!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12 animate-fade-in">
-                <a
-                  href="#download"
+                <button
+                  onClick={scrollToDownload}
                   className="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full font-semibold text-lg hover:scale-105 transition-transform duration-300 shadow-lg shadow-purple-500/25"
                 >
                   Download Now
-                </a>
+                </button>
                 <button
                   onClick={scrollToFeatures}
                   className="px-8 py-4 bg-white/10 backdrop-blur-sm rounded-full font-semibold text-lg hover:bg-white/20 transition-all duration-300"
@@ -107,14 +111,24 @@ function App() {
                     className="flex transition-transform duration-500 ease-in-out h-full"
                     style={{ transform: `translateX(-${currentSlide * 100}%)` }}
                   >
-                    {sliderImages.map((src, index) => (
-                      <img
-                        key={index}
-                        src={src}
-                        alt={`App Screenshot ${index + 1}`}
-                        className="w-full h-full object-cover flex-shrink-0"
-                      />
-                    ))}
+                    {sliderImages.map((src, index) => {
+                      const altTexts = [
+                        "AI Chat Conversation App Screenshot",
+                        "Stunning AI Art Creation App Screenshot",
+                        "User-Friendly Interface App Screenshot",
+                        "Voice Interaction Demo App Screenshot",
+                        "Customizable Persona Options App Screenshot"
+                      ];
+                      
+                      return (
+                        <img
+                          key={index}
+                          src={src}
+                          alt={altTexts[index]}
+                          className="w-full h-full object-cover flex-shrink-0"
+                        />
+                      );
+                    })}
                   </div>
                 </div>
               </div>
@@ -176,9 +190,35 @@ function App() {
           </div>
         </div>
       </div>
+      {/* Text Content Section */}
+      <div className="py-20 bg-gray-800">
+        <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-7xl text-gray-300">
+          <p className="mb-6">
+            Our AI Chatbot & Image Generator combines cutting-edge technology to give you a truly unique experience. With our app, there are no signs of limitations - enjoy endless conversations and high-quality image generation anytime, anywhere!
+          </p>
+          <p className="mb-6">
+            Imagine having a personal AI art generator and chatbot at your fingertips. Engage in seamless, natural conversations through text or voice, powered by the most advanced AI technology. Whether you’re chatting with a customizable AI personality or exploring stunning image creation, our app has you covered.
+          </p>
+          <p className="mb-6">
+            Why Choose Our Free AI Tool? Delight in completely free access - no sign-up, no ads, and totally no hidden fees! Experience 100% unrestricted capabilities forever. Our intuitive design ensures you can jump right in and start creating.
+          </p>
+          <p className="mb-6">
+            With our innovative AI, you can create incredible artwork on the go. Whether you’re refining digital paintings or crafting fantastic visuals, the possibilities are limitless. Express your creativity today!
+          </p>
+          <p className="mb-6">
+            Voice Interaction allows for a seamless and engaging dialogue, as you can speak naturally to your AI companion. The advanced voice recognition and speech synthesis ensure that every interaction feels fresh and personal.
+          </p>
+          <p className="mb-6">
+            Additionally, our customizable personas let you tailor your interactions. Choose from diverse personalities or create your own unique traits for an experience that mirrors your imagination!
+          </p>
+          <p>
+            Stay informed and connected with our web search functionality. Effortlessly pull up current news, weather forecasts, and trending topics or summarize any website's content.
+          </p>
+        </div>
+      </div>
 
       {/* Download Section */}
-      <div id="download" className="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
+      <div ref={downloadRef} className="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
         <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-7xl text-center">
           <div className="animate-on-scroll opacity-0">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -188,7 +228,6 @@ function App() {
               <a
                 href="https://play.google.com/store/apps/details?id=com.aichatbot.free"
                 className="flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full font-semibold text-lg hover:scale-105 transition-transform duration-300"
-                type="button"
                 target="_blank"
               >
                 <Download className="w-6 h-6" />
@@ -200,9 +239,9 @@ function App() {
       </div>
 
       {/* Footer */}
-      <div class="footer">
-              <a href="/privacy.html">Privacy Policy - How To Use</a>
-     </div>
+      <div className="footer">
+        <a href="/privacy.html">Privacy Policy - How To Use</a>
+      </div>
     </div>
   );
 }
