@@ -181,11 +181,6 @@ function App() {
       <div id="download" className="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
         <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-7xl text-center">
           <div className="animate-on-scroll opacity-0">
-          <p>Welcome to your ultimate hub for endless fun and creativity! Our free AI Chatbot & Image Generator unlocks a world where imagination meets technology. Experience the thrill of a mobile AI assistant that’s available 24/7. Dive into unlimited AI chat conversations where you can express yourself freely with advanced voice recognition and have personalized interactions that feel just right.
-
-With our instant image creator, unleash your creativity anytime, anywhere! Whether you're generating stunning visuals for your projects or just having some fun with art, our tool offers high-quality generations that will impress your followers and friends. Explore custom personas and choose from a variety of engaging styles to chat with—make your AI buddy uniquely yours, and watch as your creative juices flow!
-
-Don't wait! Download our app now and start creating unforgettable experiences! With no ads, no sign-ups, and absolutely no payments—it's 100% free forever!</p><br><br>
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
               Download Now for Unlimited AI Chat and Image Creation
             </h2>
