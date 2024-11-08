@@ -142,7 +142,7 @@ function App() {
       </div>
       <div className="py-20 bg-gray-800">
       <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-7xl text-gray-300 text-center">
-        <h4 className="text-2xl md:text-3xl font-normal mb-6">
+        <h3 className="text-xl md:text-3xl font-semibold mb-2">
         Discover the ultimate AI chatbot and image creator app - all for free! No sign-up, no advertisements, just pure creative freedom. Enjoy endless conversations and high-quality image generation anytime, anywhere!
           </h2>
         </div>
