@@ -217,13 +217,14 @@ function App() {
         Imagine having a personal AI image creator and chatbot at your fingertips. Engage in seamless, natural conversations through text or voice, powered by the most advanced AI technology. Whether you’re chatting with a customizable personality or exploring stunning image creation, our app has you covered.
       </p>
       <p className="mb-6">
-        Voice Interaction allows for a seamless and engaging dialogue, as you can speak naturally to your AI companion. The advanced voice recognition and speech synthesis ensure that every interaction feels fresh and personal.
+        Wondering what's happening in the world? Our AI integrates web searches, allowing you to stay informed about the latest news, trending topics, or even summarize a website—all within the same interface. It’s like having an intelligent friend at your fingertips.
       </p>
       <p className="mb-6">
         Our customizable personas let you tailor your interactions. Choose from diverse personalities or create your own unique traits for an experience that mirrors your imagination.
       </p>
+        Voice Interaction allows for a seamless and engaging dialogue, as you can speak naturally to your AI companion. The advanced voice recognition and speech synthesis ensure that every interaction feels fresh and personal.
       <p>
-        Wondering what's happening in the world? Our AI integrates web searches, allowing you to stay informed about the latest news, trending topics, or even summarize a website—all within the same interface. It’s like having an intelligent friend at your fingertips!
+        
       </p>
     </div>
   </div>
