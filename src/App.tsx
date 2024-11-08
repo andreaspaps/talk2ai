@@ -181,7 +181,7 @@ function App() {
       <div id="download" className="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
         <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-7xl text-center">
           <div className="animate-on-scroll opacity-0">
-          <p>Welcome to your ultimate destination for unlimited free AI interactions! Our AI Chatbot & Image Generator combines cutting-edge technology to give you a truly unique experience. With our app, there are no signs of limitations - enjoy endless conversations and high-quality image generation anytime, anywhere!</p>
+          <p>Welcome to your ultimate destination for unlimited free AI interactions! Our AI Chatbot & Image Generator combines cutting-edge technology to give you a truly unique experience. With our app, there are no signs of limitations - enjoy endless conversations and high-quality image generation anytime, anywhere!</p><br><br>
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
               Download Now for Unlimited AI Chat and Image Creation
             </h2>
