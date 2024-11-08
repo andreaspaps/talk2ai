@@ -18,6 +18,10 @@ export default defineConfig({
         {
           src: 'src/robots.txt', // Ensure this line includes your _redirects file
           dest: '' // Copies _redirects to the root of the output directory
+        },
+        {
+          src: 'src/thumbnail.jpg', // Ensure this line includes your _redirects file
+          dest: '' // Copies _redirects to the root of the output directory
         }
       ]
     })
