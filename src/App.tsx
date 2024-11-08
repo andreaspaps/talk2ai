@@ -161,7 +161,7 @@ function App() {
       </div>
       {/* Features Section */}
       <div ref={featuresRef} className="py-20 bg-gray-900">
-        <div className="container mx-auto px-6 md:px-8 lg:px-13 max-w-7xl">
+        <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-6xl">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
