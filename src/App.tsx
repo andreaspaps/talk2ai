@@ -8,6 +8,7 @@ import {
   Sparkles,
   Download,
   ChevronDown,
+  ChevronUp,
 } from 'lucide-react';
 
 import image1 from './images/1.jpg';
