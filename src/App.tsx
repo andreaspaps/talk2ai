@@ -233,7 +233,7 @@ function App() {
       </div>
       {/* Download Section */}
       <div ref={downloadRef} className="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
-        <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-7xl text-center">
+        <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-3xl text-center">
           <div className="animate-on-scroll opacity-0">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
               Download Now for Unlimited AI Chat and Image Creation
