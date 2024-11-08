@@ -140,7 +140,13 @@ function App() {
           <ChevronDown className="mx-auto w-8 h-8" />
         </div>
       </div>
-
+      <div className="py-20 bg-gray-800">
+        <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-7xl text-gray-300">
+          <p className="mb-6">
+            Discover the ultimate AI chatbot and image creator app - all for free! No sign-up, no advertisements, just pure creative freedom. Enjoy endless conversations and high-quality image generation anytime, anywhere!
+          </p>
+        </div>
+      </div>
       {/* Features Section */}
       <div ref={featuresRef} className="py-20 bg-gray-900">
         <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-7xl">
@@ -194,25 +200,16 @@ function App() {
       <div className="py-20 bg-gray-800">
         <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-7xl text-gray-300">
           <p className="mb-6">
-            Our AI Chatbot & Image Generator combines cutting-edge technology to give you a truly unique experience. With our app, there are no signs of limitations - enjoy endless conversations and high-quality image generation anytime, anywhere!
-          </p>
-          <p className="mb-6">
-            Imagine having a personal AI art generator and chatbot at your fingertips. Engage in seamless, natural conversations through text or voice, powered by the most advanced AI technology. Whether you’re chatting with a customizable AI personality or exploring stunning image creation, our app has you covered.
-          </p>
-          <p className="mb-6">
-            Why Choose Our Free AI Tool? Delight in completely free access - no sign-up, no ads, and totally no hidden fees! Experience 100% unrestricted capabilities forever. Our intuitive design ensures you can jump right in and start creating.
-          </p>
-          <p className="mb-6">
-            With our innovative AI, you can create incredible artwork on the go. Whether you’re refining digital paintings or crafting fantastic visuals, the possibilities are limitless. Express your creativity today!
+            Imagine having a personal AI art generator and chatbot at your fingertips. Engage in seamless, natural conversations through text or voice, powered by the most advanced AI technology. Whether you’re chatting with a customizable personality or exploring stunning image creation, our app has you covered.
           </p>
           <p className="mb-6">
             Voice Interaction allows for a seamless and engaging dialogue, as you can speak naturally to your AI companion. The advanced voice recognition and speech synthesis ensure that every interaction feels fresh and personal.
           </p>
           <p className="mb-6">
-            Additionally, our customizable personas let you tailor your interactions. Choose from diverse personalities or create your own unique traits for an experience that mirrors your imagination!
+            Our customizable personas let you tailor your interactions. Choose from diverse personalities or create your own unique traits for an experience that mirrors your imagination.
           </p>
           <p>
-            Stay informed and connected with our web search functionality. Effortlessly pull up current news, weather forecasts, and trending topics or summarize any website's content.
+            Wondering what's happening in the world? Our AI integrates web searches allowing you to stay informed about the latest news, trending topics or even summarize a website, all within the same interface. It’s like having an intelligent friend at your fingertips!
           </p>
         </div>
       </div>
