@@ -65,3 +65,10 @@
 .font-medium {
     font-weight: 400;
 }
+
+/* Gap for larger screens (e.g., tablet and above) */
+@media (min-width: 768px) {
+    .gap-10 {
+        gap: 0; /* Original larger gap for desktops and tablets */
+    }
+}
