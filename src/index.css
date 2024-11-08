@@ -66,6 +66,10 @@
     font-weight: 400;
 }
 
+.py-10 {
+    padding-top: 5rem;
+}
+
 /* Gap for mobile screens */
 @media (max-width: 768px) {
     .gap-10 {
