@@ -33,6 +33,18 @@ function App() {
   };
 
   useEffect(() => {
+    // Preload the image
+    const link = document.createElement('link');
+    link.rel = 'preload';
+    link.href = '/assets/1-5Y_e1NJV.jpg'; // Path to your image
+    link.as = 'image';
+    document.head.appendChild(link);
+    
+    // Cleanup when component unmounts
+    return () => document.head.removeChild(link);
+  }, []);
+
+  useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % sliderImages.length);
     }, 4000);
