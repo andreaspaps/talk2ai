@@ -214,7 +214,7 @@ function App() {
           </div>
           <div
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="absolute bottom-8 w-full text-center cursor-pointer animate-bounce z-10"
+            className="absolute w-full text-center cursor-pointer animate-bounce z-10"
             >
           <ChevronUp className="mx-auto w-8 h-8" />
         </div>
