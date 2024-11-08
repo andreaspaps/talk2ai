@@ -74,4 +74,8 @@
     .gap-14 {
         gap: 0;
     }
+    py-20 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    }
 }
