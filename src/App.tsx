@@ -153,7 +153,7 @@ function App() {
         </div>
       </div>
       <div className="py-20 bg-gray-800">
-      <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-5xl text-gray-300 text-center">
+      <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-4xl text-gray-300 text-center">
         <div className="text-xl md:text-2xl font-medium mb-2">
         Discover the ultimate free AI chatbot and image generator app - all for free! No sign-up, no advertisements, just pure creative freedom. Enjoy endless conversations and high-quality image generation anytime, anywhere!
           </div>
@@ -210,7 +210,7 @@ function App() {
       </div>
       {/* Text Content Section */}
       <div className="py-20 bg-gray-800">
-        <div className="container text-lg md:text-2lg mx-auto px-6 md:px-8 lg:px-12 max-w-7xl text-gray-300">
+        <div className="container text-lg max-w-5xl md:text-2lg mx-auto px-6 md:px-8 lg:px-12 max-w-7xl text-gray-300">
           <p className="mb-6">
             Imagine having a personal AI image creator and chatbot at your fingertips. Engage in seamless, natural conversations through text or voice, powered by the most advanced AI technology. Whether you’re chatting with a customizable personality or exploring stunning image creation, our app has you covered.
           </p>
