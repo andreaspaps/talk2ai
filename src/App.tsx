@@ -209,8 +209,8 @@ function App() {
         </div>
       </div>
       {/* Text Content Section */}
-<div className="py-20 bg-gray-800 overflow-hidden">
-  <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-6xl text-gray-300">
+<div className="py-20 bg-gray-800">
+  <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-5xl text-gray-300 overflow-hidden">
     {/* Grid Layout */}
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-lg md:text-2lg">
       <p className="mb-6">
@@ -226,14 +226,14 @@ function App() {
         Wondering what's happening in the world? Our AI integrates web searches, allowing you to stay informed about the latest news, trending topics, or even summarize a website—all within the same interface. It’s like having an intelligent friend at your fingertips!
       </p>
     </div>
-    
-    {/* Chevron for Scrolling */}
-    <div className="absolute w-full text-center z-10 mt-8">
-      <ChevronUp
-        className="mx-auto w-8 h-8 text-white cursor-pointer animate-bounce"
-        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-      />
-    </div>
+  </div>
+  
+  {/* Chevron for Scrolling */}
+  <div className="w-full text-center z-10 mt-8 overflow-hidden">
+    <ChevronUp
+      className="mx-auto w-8 h-8 text-white cursor-pointer animate-bounce"
+      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+    />
   </div>
 </div>
 
