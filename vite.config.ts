@@ -20,6 +20,10 @@ export default defineConfig({
           dest: '' // Copies _redirects to the root of the output directory
         },
         {
+          src: 'src/android-chrome-192x192.png', // Ensure this line includes your _redirects file
+          dest: '' // Copies _redirects to the root of the output directory
+        },
+        {
           src: 'src/thumbnail.jpg', // Ensure this line includes your _redirects file
           dest: '' // Copies _redirects to the root of the output directory
         },
