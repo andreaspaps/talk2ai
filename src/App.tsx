@@ -209,31 +209,28 @@ function App() {
         </div>
       </div>
       {/* Text Content Section */}
-<div className="py-20 bg-gray-800">
-  <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-6xl text-gray-300">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-lg md:text-2lg">
-      <p className="mb-6">
-        Imagine having a personal AI image creator and chatbot at your fingertips. Engage in seamless, natural conversations through text or voice, powered by the most advanced AI technology. Whether you’re chatting with a customizable personality or exploring stunning image creation, our app has you covered.
-      </p>
-      <p className="mb-6">
-        Voice Interaction allows for a seamless and engaging dialogue, as you can speak naturally to your AI companion. The advanced voice recognition and speech synthesis ensure that every interaction feels fresh and personal.
-      </p>
-      <p className="mb-6">
-        Our customizable personas let you tailor your interactions. Choose from diverse personalities or create your own unique traits for an experience that mirrors your imagination.
-      </p>
-      <p>
-        Wondering what's happening in the world? Our AI integrates web searches, allowing you to stay informed about the latest news, trending topics, or even summarize a website—all within the same interface. It’s like having an intelligent friend at your fingertips!
-      </p>
-    </div>
-    <div className="absolute w-full text-center z-10 mt-8">
-      <ChevronUp
-        className="mx-auto w-8 h-8 text-white cursor-pointer animate-bounce"
-        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-      />
-    </div>
-  </div>
-</div>
-
+      <div className="py-20 bg-gray-800">
+        <div className="container text-lg md:text-2lg mx-auto px-6 md:px-8 lg:px-12 max-w-5xl text-gray-300">
+          <p className="mb-6">
+            Imagine having a personal AI image creator and chatbot at your fingertips. Engage in seamless, natural conversations through text or voice, powered by the most advanced AI technology. Whether you’re chatting with a customizable personality or exploring stunning image creation, our app has you covered.
+          </p>
+          <p className="mb-6">
+            Voice Interaction allows for a seamless and engaging dialogue, as you can speak naturally to your AI companion. The advanced voice recognition and speech synthesis ensure that every interaction feels fresh and personal.
+          </p>
+          <p className="mb-6">
+            Our customizable personas let you tailor your interactions. Choose from diverse personalities or create your own unique traits for an experience that mirrors your imagination.
+          </p>
+          <p>
+            Wondering what's happening in the world? Our AI integrates web searches allowing you to stay informed about the latest news, trending topics or even summarize a website, all within the same interface. It’s like having an intelligent friend at your fingertips!
+          </p>
+          </div>
+          <div className="absolute w-full text-center z-10 mt-8">
+          <ChevronUp
+            className="mx-auto w-8 h-8 text-white cursor-pointer animate-bounce"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          />
+        </div>
+      </div>
       {/* Download Section */}
       <div ref={downloadRef} className="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
         <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-3xl text-center">
