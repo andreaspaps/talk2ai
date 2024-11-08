@@ -65,3 +65,7 @@
 .font-medium {
     font-weight: 400;
 }
+
+.py-20 {
+    padding-left: 5rem;
+}
