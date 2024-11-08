@@ -61,3 +61,7 @@
 .rounded-\[3rem\] {
     border-radius: 2rem;
 }
+
+.font-medium {
+    font-weight: 300;
+}
