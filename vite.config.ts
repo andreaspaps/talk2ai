@@ -8,7 +8,7 @@ export default defineConfig({
     viteStaticCopy({
       targets: [
         {
-          src: 'src/.well-known', // Source directory containing .well-known
+          src: 'src/.well-known/*', // Source directory containing .well-known
           dest: '.well-known' // Destination folder in dist
         },
         {
