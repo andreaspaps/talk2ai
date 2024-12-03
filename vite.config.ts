@@ -7,40 +7,34 @@ export default defineConfig({
     react(),
     viteStaticCopy({
       targets: [
-        // Copy .well-known directory as-is to dist/.well-known
         {
-          src: 'src/.well-known', 
-          dest: '.well-known' // Ensure this copies the entire folder to dist
+          src: 'src/.well-known', // Source directory containing .well-known
+          dest: '.well-known' // Destination folder in dist
         },
         {
-          src: 'src/_redirects',  // Copy _redirects file to the root of dist
-          dest: ''
+          src: 'src/_redirects', // _redirects file
+          dest: '' // Places _redirects in the root of dist
         },
         {
-          src: 'src/privacy.html',  // Example static file
-          dest: ''
+          src: 'src/privacy.html', // Example static file
+          dest: '' // Places privacy.html in the root of dist
         },
         {
-          src: 'src/robots.txt',  // Example static file
-          dest: ''
+          src: 'src/robots.txt', // robots.txt for SEO
+          dest: '' // Places robots.txt in the root of dist
         },
         {
-          src: 'src/android-chrome-192x192.png',  // Example static file
-          dest: ''
+          src: 'src/android-chrome-192x192.png', // Example static image
+          dest: '' // Places it in the root of dist
         },
         {
-          src: 'src/thumbnail.jpg',  // Example static file
-          dest: ''
-        },
-        {
-          src: 'src/netlify.toml',  // Example static file
-          dest: ''
+          src: 'src/thumbnail.jpg', // Example thumbnail image
+          dest: '' // Places it in the root of dist
         }
       ]
     })
   ],
   build: {
-    // Specify your output directory if different
-    outDir: 'dist' // Default output directory for Vite
+    outDir: 'dist' // Build output directory
   }
 });
