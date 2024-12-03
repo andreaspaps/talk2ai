@@ -9,7 +9,7 @@ export default defineConfig({
       targets: [
         // Copy .well-known directory as-is to dist/.well-known
         {
-          src: '.well-known', 
+          src: 'src/.well-known', 
           dest: '.well-known' // Ensure this copies the entire folder to dist
         },
         {
