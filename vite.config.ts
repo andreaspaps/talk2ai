@@ -7,33 +7,34 @@ export default defineConfig({
     react(),
     viteStaticCopy({
       targets: [
+        // Copy .well-known directory as-is to dist/.well-known
         {
-          src: 'src/privacy.html',
-          dest: '' // Copies privacy.html to the root of the output directory
+          src: '.well-known', 
+          dest: '.well-known' // Ensure this copies the entire folder to dist
         },
         {
-          src: 'src/_redirects', // Ensure this line includes your _redirects file
-          dest: '' // Copies _redirects to the root of the output directory
+          src: 'src/_redirects',  // Copy _redirects file to the root of dist
+          dest: ''
         },
         {
-          src: 'src/robots.txt', // Ensure this line includes your _redirects file
-          dest: '' // Copies _redirects to the root of the output directory
+          src: 'src/privacy.html',  // Example static file
+          dest: ''
         },
         {
-          src: 'src/android-chrome-192x192.png', // Ensure this line includes your _redirects file
-          dest: '' // Copies _redirects to the root of the output directory
+          src: 'src/robots.txt',  // Example static file
+          dest: ''
         },
         {
-          src: 'src/thumbnail.jpg', // Ensure this line includes your _redirects file
-          dest: '' // Copies _redirects to the root of the output directory
+          src: 'src/android-chrome-192x192.png',  // Example static file
+          dest: ''
         },
         {
-          src: 'src/netlify.toml', // Ensure this line includes your _redirects file
-          dest: '' // Copies _redirects to the root of the output directory
+          src: 'src/thumbnail.jpg',  // Example static file
+          dest: ''
         },
         {
-          src: 'src/.well-known/assetlinks.json', // Ensure this line includes your _redirects file
-          dest: '' // Copies _redirects to the root of the output directory
+          src: 'src/netlify.toml',  // Example static file
+          dest: ''
         }
       ]
     })
