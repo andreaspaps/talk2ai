@@ -3,3 +3,8 @@
   to = "https://freeaichat.app"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/.well-known/*"
+  to = "/.well-known/:splat"
+  status = 200
