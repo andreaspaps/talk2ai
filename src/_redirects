@@ -1,8 +1,14 @@
-/robots.txt    /robots.txt   200
-/thumbnail.jpg    /thumbnail.jpg   200
-/.well-known/*   /.well-known/:splat   200
+# Serve static files with 200 status
+/robots.txt                    /robots.txt   200
+/thumbnail.jpg                 /thumbnail.jpg   200
 /android-chrome-192x192.png    /android-chrome-192x192.png   200
-/netlify.toml    /netlify.toml   200
-/privacy.html  /privacy.html  200
-/*             /index.html    200
-https://talk2ai.netlify.app/* https://freeaichat.app/:splat 301!
+/privacy.html                  /privacy.html   200
+
+# Serve .well-known directory files
+/.well-known/*                 /.well-known/:splat   200
+
+# Redirect everything else to index.html for React SPA
+/*                             /index.html    200
+
+# Redirect traffic from old domain to new domain (enforced redirect)
+https://talk2ai.netlify.app/*  https://freeaichat.app/:splat 301!
