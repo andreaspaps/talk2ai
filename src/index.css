@@ -90,3 +90,7 @@
     padding-bottom: 0rem;
     }
 }
+
+.max-w-3xl {
+    max-width: 38rem;
+}
