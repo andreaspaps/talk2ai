@@ -240,7 +240,7 @@ function App() {
         <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-3xl text-center">
           <div className="animate-on-scroll opacity-0">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
-              Download Now for Unlimited AI Chat and Image Creation
+              Install Now for Unlimited AI Chat and Image Creation
             </h2>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
