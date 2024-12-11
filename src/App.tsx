@@ -95,19 +95,33 @@ function App() {
               <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl animate-fade-in">
                 Unlimited AI chat with voice conversations and high quality image generation - No Sign-Up - No ads!
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12 animate-fade-in">
-                <button
-                  onClick={scrollToDownload}
-                  className="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full font-semibold text-lg hover:scale-105 transition-transform duration-300 shadow-lg shadow-purple-500/25"
+              <div className="flex flex-col items-center gap-4 justify-center lg:justify-start mb-12 animate-fade-in">
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <button
+                    onClick={scrollToDownload}
+                    className="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full font-semibold text-lg hover:scale-105 transition-transform duration-300 shadow-lg shadow-purple-500/25"
+                  >
+                    Download Now
+                  </button>
+                  <button
+                    onClick={scrollToFeatures}
+                    className="px-8 py-4 bg-white/10 backdrop-blur-sm rounded-full font-semibold text-lg hover:bg-white/20 transition-all duration-300"
+                  >
+                    Learn More
+                  </button>
+                </div>
+                <a 
+                  href="https://www.producthunt.com/posts/free-ai-chatbot-image-generator?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-free&#0045;ai&#0045;chatbot&#0045;image&#0045;generator" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4"
                 >
-                  Download Now
-                </button>
-                <button
-                  onClick={scrollToFeatures}
-                  className="px-8 py-4 bg-white/10 backdrop-blur-sm rounded-full font-semibold text-lg hover:bg-white/20 transition-all duration-300"
-                >
-                  Learn More
-                </button>
+                  <img 
+                    src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=668996&theme=light" 
+                    alt="Free AI Chatbot & Image Generator - Unlimited AI chat and image generation | Product Hunt" 
+                    className="w-[250px] h-[54px]"
+                  />
+                </a>
               </div>
             </div>
 
