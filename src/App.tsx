@@ -109,7 +109,7 @@ function App() {
                   Learn More
                 </button>
               </div>
-              <div className="mt-4 animate-fade-in flex justify-center lg:justify-start">
+              <div className="mt-4 animate-fade-in sm:mb-0 mb-5">
   <a 
     href="https://www.producthunt.com/posts/free-ai-chatbot-image-generator?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-free&#0045;ai&#0045;chatbot&#0045;image&#0045;generator" 
     target="_blank"
@@ -117,9 +117,7 @@ function App() {
     <img 
       src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=668996&theme=light" 
       alt="Free&#0032;AI&#0032;Chatbot&#0032;&#0038;&#0032;Image&#0032;Generator - Unlimited&#0032;AI&#0032;chat&#0032;and&#0032;image&#0032;generation | Product Hunt" 
-      style={{ width: '250px', height: '54px' }} 
-      width="250" 
-      height="54" 
+      className="w-[250px] h-[54px] mx-auto sm:mx-0" 
     />
   </a>
 </div>
