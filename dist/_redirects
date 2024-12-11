@@ -8,7 +8,7 @@
 /.well-known/*                 /.well-known/:splat   200
 
 # Redirect everything else to index.html for React SPA
-/*                             /index.html    200
+/*                             / 301!
 
 # Redirect traffic from old domain to new domain (enforced redirect)
 https://talk2ai.netlify.app/*  https://freeaichat.app/:splat 301!
