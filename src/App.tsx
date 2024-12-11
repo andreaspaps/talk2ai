@@ -116,7 +116,7 @@ function App() {
                   target="_blank"
                 >
                   <img 
-                    src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=668996&theme=light" 
+                    src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=668996&theme=dark" 
                     alt="Free&#0032;AI&#0032;Chatbot&#0032;&#0038;&#0032;Image&#0032;Generator - Unlimited&#0032;AI&#0032;chat&#0032;and&#0032;image&#0032;generation | Product Hunt" 
                     className="w-[250px] h-[54px] mx-auto sm:mx-0" 
                   />
