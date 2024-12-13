@@ -95,13 +95,6 @@
     color: #d6d6d6;
 }
 
-.footer-links a:first-child::after {
-    content: "•";
-    color: #888;
-    margin-left: 20px;
-    margin-left: 20px;
-}
-
 /* Gap for mobile screens */
 @media (max-width: 768px) {
     .gap-10 {
