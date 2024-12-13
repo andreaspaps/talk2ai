@@ -20,6 +20,10 @@ export default defineConfig({
           dest: '' // Places privacy.html in the root of dist
         },
         {
+          src: 'src/privacy.html', // Example static file
+          dest: '' // Places privacy.html in the root of dist
+        },
+        {
           src: 'src/robots.txt', // robots.txt for SEO
           dest: '' // Places robots.txt in the root of dist
         },
