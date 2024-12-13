@@ -85,6 +85,7 @@
 .footer-links {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 
@@ -92,6 +93,12 @@
     margin: 10px 0;
     text-decoration: none;
     color: #d6d6d6;
+}
+
+.footer-links a:first-child::after {
+    content: "•";
+    color: #888;
+    margin-left: 20px;
 }
 
 /* Gap for mobile screens */
@@ -121,11 +128,5 @@
 
     .footer-links a {
     margin: 0 10px;
-    }
-
-    .footer-links a:first-child::after {
-    content: "•";
-    color: #888;
-    margin-left: 20px;
     }
 }
