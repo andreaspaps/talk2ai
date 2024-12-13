@@ -271,7 +271,7 @@ function App() {
       {/* Footer */}
       <div class="footer">
         <div class="footer-links">
-            <h3><a href="/top-10-free-ai-image-generation-android-apps.html">Top AI Free Image Generator Apps</a></h3>
+            <h3><a href="/top-10-free-ai-image-generation-apps.html">Top AI Free Image Generator Apps</a></h3>
             <h3><a href="/privacy.html">Privacy Policy - How To Use</a></h3>
         </div>
       </div>
