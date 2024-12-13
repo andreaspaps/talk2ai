@@ -34,6 +34,10 @@ export default defineConfig({
         {
           src: 'src/thumbnail.jpg', // Example thumbnail image
           dest: '' // Places it in the root of dist
+        },
+        {
+          src: 'src/hero-img11.jpg', // Example thumbnail image
+          dest: '' // Places it in the root of dist
         }
       ]
     })
