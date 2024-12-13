@@ -20,7 +20,7 @@ export default defineConfig({
           dest: '' // Places privacy.html in the root of dist
         },
         {
-          src: 'src/privacy.html', // Example static file
+          src: 'src/top-10-free-ai-image-generation-apps.html', // Example static file
           dest: '' // Places privacy.html in the root of dist
         },
         {
