@@ -3,7 +3,7 @@
 /thumbnail.jpg                 /thumbnail.jpg   200
 /android-chrome-192x192.png    /android-chrome-192x192.png   200
 /privacy.html                  /privacy.html   200
-/top-10-free-ai-image-generation-apps.html    /top-10-free-ai-image-generation-apps.html   200
+/top-10-free-ai-image-generation-apps.html     /top-10-free-ai-image-generation-apps.html   200
 
 # Serve .well-known directory files
 /.well-known/*                 /.well-known/:splat   200
