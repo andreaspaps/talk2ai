@@ -269,9 +269,11 @@ function App() {
         </div>
       </div>
       {/* Footer */}
-      <div className="footer">
-        <a href="/privacy.html">Privacy Policy - How To Use</a>
-      </div>
+      <div class="footer">
+        <div class="footer-links">
+            <a href="/top-10-free-ai-image-generation-android-apps.html">Top AI Free Image Generator Apps</a>
+            <a href="/privacy.html">Privacy Policy - How To Use</a>
+        </div>
     </div>
   );
 }
