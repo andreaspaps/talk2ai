@@ -36,7 +36,7 @@ function App() {
     // Preload the image
     const link = document.createElement('link');
     link.rel = 'preload';
-    link.href = '/assets/1-5Y_e1NJV.jpg'; // Path to your image
+    link.href = '/dist/assets/1-5Y_e1NJV.jpg'; // Path to your image
     link.as = 'image';
     document.head.appendChild(link);
     
