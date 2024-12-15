@@ -14,7 +14,8 @@
 }
 
 .animate-fade-in {
-  animation: fadeIn 0.8s ease-out forwards;
+    opacity: 0.0001;
+    animation: fadeIn 0.8s ease-out forwards;
 }
 
 .animate-on-scroll {
