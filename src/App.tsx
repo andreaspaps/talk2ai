@@ -155,11 +155,11 @@ function App() {
 
   return (
     <img
-  key={index}
-  src={src}
-  alt={altTexts[index]}
-  className="w-full h-full object-cover flex-shrink-0"
-  loading={index === 0 ? 'eager' : 'lazy'} // Eager load for the first, lazy for others
+      key={index}
+      src={src}
+      alt={altTexts[index]}
+      className="w-full h-full object-cover flex-shrink-0"
+      loading={index === 0 ? 'eager' : 'lazy'} // Eager loading for first image (LCP element)
     />
   );
 })}
