@@ -40,7 +40,7 @@ function App() {
       link.href = src;
       link.as = 'image';
       document.head.appendChild(link);
-      console.log(`Preloading image: ${src}`); // Add this to confirm it's being added
+      console.log(`Preloading image: ${src}`); // Log to confirm preload is being triggered
     });
   };
 
@@ -55,6 +55,7 @@ function App() {
     });
   };
 }, []);
+
 
   useEffect(() => {
     const interval = setInterval(() => {
