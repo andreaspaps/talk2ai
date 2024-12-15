@@ -56,6 +56,14 @@ function App() {
   }, []);
 
   useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % sliderImages.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
     const observerOptions = {
       threshold: 0.1,
       rootMargin: '0px',
