@@ -149,23 +149,25 @@ function App() {
                     style={{ transform: `translateX(-${currentSlide * 100}%)` }}
                   >
                     {sliderImages.map((src, index) => {
-                      const altTexts = [
-                        "Stunning AI Art Creation App Screenshot",
-                        "AI Chat Conversation App Screenshot",
-                        "User-Friendly Interface App Screenshot",
-                        "Voice Interaction Demo App Screenshot",
-                        "Top News Web Search App Screenshot"
-                      ];
-                      
-                      return (
-                        <img
-                          key={index}
-                          src={src}
-                          alt={altTexts[index]}
-                          className="w-full h-full object-cover flex-shrink-0"
-                        />
-                      );
-                    })}
+  const altTexts = [
+    "Stunning AI Art Creation App Screenshot",
+    "AI Chat Conversation App Screenshot",
+    "User-Friendly Interface App Screenshot",
+    "Voice Interaction Demo App Screenshot",
+    "Top News Web Search App Screenshot"
+  ];
+
+  return (
+    <img
+      key={index}
+      src={src}
+      alt={altTexts[index]}
+      className="w-full h-full object-cover flex-shrink-0"
+      loading={index === 0 ? 'eager' : 'lazy'} // Eager loading for first image (LCP element)
+    />
+  );
+})}
+
                   </div>
                 </div>
               </div>
