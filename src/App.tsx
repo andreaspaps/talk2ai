@@ -35,7 +35,7 @@ function App() {
   useEffect(() => {
     // Preload the image
     const link = document.createElement('link');
-    link.rel = 'preload';
+    link.rel = image1;
     link.href = './images/1.jpg'; // Path to your image
     link.as = 'image';
     document.head.appendChild(link);
