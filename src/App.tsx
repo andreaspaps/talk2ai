@@ -148,11 +148,11 @@ function App() {
                   >
                     {sliderImages.map((src, index) => {
                       const altTexts = [
-                        "AI Chat Conversation App Screenshot",
                         "Stunning AI Art Creation App Screenshot",
+                        "AI Chat Conversation App Screenshot",
                         "User-Friendly Interface App Screenshot",
                         "Voice Interaction Demo App Screenshot",
-                        "Customizable Persona Options App Screenshot"
+                        "Top News Web Search App Screenshot"
                       ];
                       
                       return (
