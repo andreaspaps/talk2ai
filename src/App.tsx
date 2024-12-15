@@ -33,14 +33,17 @@ function App() {
   };
 
   useEffect(() => {
+  // Preload images by adding <link rel="preload"> to the document head
   sliderImages.forEach((src) => {
     const link = document.createElement('link');
     link.rel = 'preload';
     link.href = src;
     link.as = 'image';
+    link.onload = () => console.log(`Preloaded image: ${src}`);
     document.head.appendChild(link);
   });
 
+  // Clean up preload links on component unmount
   return () => {
     document.querySelectorAll('link[rel="preload"]').forEach((link) => {
       if (sliderImages.includes(link.href)) {
