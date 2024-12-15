@@ -107,7 +107,7 @@ function App() {
                 </button>
               </div>
               {/* Product Hunt Embed */}
-              <div className="mt-4 animate-fade-in mb-5 sm:mb-0">
+              <div className="mt-4 animate-fade-in mb-5 sm:mb-0 text-center">
                 <a 
                   href="https://www.producthunt.com/posts/free-ai-chatbot-image-generator?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-free&#0045;ai&#0045;chatbot&#0045;image&#0045;generator" 
                   target="_blank"
