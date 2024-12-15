@@ -89,7 +89,7 @@ function App() {
               <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 text-transparent bg-clip-text animate-fade-in">
                 Free AI Chatbot & Image Generator
               </h1>
-              <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl animate-fade-in">
+              <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl animate-fade-in mx-auto lg:mx-0">
                 Unlimited AI chat with voice conversations and high quality image generation - No Sign-Up - No ads!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12 animate-fade-in">
