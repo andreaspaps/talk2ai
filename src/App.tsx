@@ -41,14 +41,6 @@ function App() {
   }, []);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % sliderImages.length);
-    }, 4000);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  useEffect(() => {
     const observerOptions = {
       threshold: 0.1,
       rootMargin: '0px',
@@ -74,12 +66,7 @@ function App() {
       {/* Hero Section */}
       <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900/30 via-blue-900/30 to-teal-900/30" />
-        <div className="absolute inset-0" style={{
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          opacity: 0.0001,
-        }} />
-        
+        <div className="absolute inset-0" style={{ backgroundSize: 'cover', backgroundPosition: 'center' }} />
         <div className="container mx-auto px-6 md:px-8 lg:px-12 relative z-10 max-w-7xl">
           <div className="flex flex-col lg:flex-row items-center gap-12 py-20">
             {/* Text Content */}
