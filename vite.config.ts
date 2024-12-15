@@ -38,10 +38,6 @@ export default defineConfig({
         {
           src: 'src/hero-img11.jpg', // Example thumbnail image
           dest: '' // Places it in the root of dist
-        },
-        {
-        src: 'src/assets/1.jpg', // Path to the image in your source directory
-        dest: 'assets' // Target folder in dist (you can change 'assets' if needed)
         }
       ]
     })

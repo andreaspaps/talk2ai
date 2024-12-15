@@ -8,7 +8,15 @@
   <!-- Canonical Link -->
   <link rel="canonical" href="https://freeaichat.app" />
   <!-- Preload Slider Image Dynamically (Handled by Vite) -->
-  <link rel="preload" href="/assets/1.jpg" as="image">
+  <script type="module">
+    import firstImage from './assets/1.jpg'; // Import the first image
+    const link = document.createElement('link');
+    link.rel = 'preload';
+    link.href = firstImage; // Use Vite's import URL for the preloaded image
+    link.as = 'image';
+    document.head.appendChild(link);
+    console.log(`Preloading first image: ${firstImage}`);
+  </script> 
   <!-- Icons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
