@@ -33,18 +33,15 @@ function App() {
   };
 
   useEffect(() => {
-  const preloadImages = () => {
-    sliderImages.forEach((src) => {
-      const link = document.createElement('link');
-      link.rel = 'preload';
-      link.href = src;
-      link.as = 'image';
-      document.head.appendChild(link);
-      console.log(`Preloading image: ${src}`); // Log to confirm preload is being triggered
-    });
-  };
-
-  preloadImages();
+  // Preload images by adding <link rel="preload"> to the document head
+  sliderImages.forEach((src) => {
+    const link = document.createElement('link');
+    link.rel = 'preload';
+    link.href = src;
+    link.as = 'image';
+    link.onload = () => console.log(`Preloaded image: ${src}`);
+    document.head.appendChild(link);
+  });
 
   // Clean up preload links on component unmount
   return () => {
@@ -88,16 +85,6 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-900 text-white">
-      {/* Preload the LCP Image */}
-      <div className="hidden">
-        <img
-          src={sliderImages[0]}
-          alt="Preloaded First Slide"
-          loading="eager"
-          fetchpriority="high"
-        />
-      </div>
-      
       {/* Hero Section */}
       <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900/30 via-blue-900/30 to-teal-900/30" />
