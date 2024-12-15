@@ -33,24 +33,11 @@ function App() {
   };
 
   useEffect(() => {
-  const preloadFirstImage = () => {
-    const link = document.createElement('link');
-    link.rel = 'preload';
-    link.href = new URL(sliderImages[0], window.location.href).toString();
- // Preload only the first image
-    link.as = 'image';
-    document.head.appendChild(link);
-    console.log(`Preloading first image: ${sliderImages[0]}`);
-  };
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % sliderImages.length);
+    }, 4000);
 
-  preloadFirstImage();
-
-  return () => {
-    const preloadLink = document.querySelector(`link[href="${sliderImages[0]}"]`);
-    if (preloadLink) {
-      document.head.removeChild(preloadLink);
-      }
-    };
+    return () => clearInterval(interval);
   }, []);
 
   useEffect(() => {
