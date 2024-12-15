@@ -34,13 +34,19 @@ function App() {
 
   useEffect(() => {
   const preloadImages = () => {
-    sliderImages.forEach((src) => {
+    sliderImages.forEach((src, index) => {
       const link = document.createElement('link');
       link.rel = 'preload';
       link.href = src;
       link.as = 'image';
+
+      // Eagerly load the first image (LCP)
+      if (index === 0) {
+        link.setAttribute('fetchpriority', 'high');  // Add this line to give high priority to the LCP image
+      }
+
       document.head.appendChild(link);
-      console.log(`Preloading image: ${src}`); // Log to confirm preload is being triggered
+      console.log(`Preloading image: ${src}`);
     });
   };
 
