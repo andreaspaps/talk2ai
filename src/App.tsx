@@ -33,28 +33,24 @@ function App() {
   };
 
   useEffect(() => {
-  const preloadImages = () => {
-    sliderImages.forEach((src) => {
-      const link = document.createElement('link');
-      link.rel = 'preload';
-      link.href = src;
-      link.as = 'image';
-      document.head.appendChild(link);
-      console.log(`Preloading image: ${src}`); // Log to confirm preload is being triggered
-    });
+  const preloadFirstImage = () => {
+    const link = document.createElement('link');
+    link.rel = 'preload';
+    link.href = sliderImages[0]; // Preload only the first image
+    link.as = 'image';
+    document.head.appendChild(link);
+    console.log(`Preloading first image: ${sliderImages[0]}`);
   };
 
-  preloadImages();
+  preloadFirstImage();
 
-  // Clean up preload links on component unmount
   return () => {
-    document.querySelectorAll('link[rel="preload"]').forEach((link) => {
-      if (sliderImages.includes(link.href)) {
-        document.head.removeChild(link);
+    const preloadLink = document.querySelector(`link[href="${sliderImages[0]}"]`);
+    if (preloadLink) {
+      document.head.removeChild(preloadLink);
       }
-    });
-  };
-}, []);
+    };
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
