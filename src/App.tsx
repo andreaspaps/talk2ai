@@ -91,7 +91,7 @@ function App() {
         <div className="absolute inset-0" style={{
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          opacity: 0.001,
+          opacity: 0.0001,
         }} />
         
         <div className="container mx-auto px-6 md:px-8 lg:px-12 relative z-10 max-w-7xl">
