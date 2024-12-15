@@ -82,7 +82,7 @@ function App() {
       //  backgroundImage: "url('/api/placeholder/2574/1600')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          opacity: 0.1
+          opacity: 0.01
         }} />
         
         <div className="container mx-auto px-6 md:px-8 lg:px-12 relative z-10 max-w-7xl">
