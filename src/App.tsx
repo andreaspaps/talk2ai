@@ -1,15 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import {
-  Bot,
-  Image,
-  MessageSquare,
-  Mic,
-  Brain,
-  Sparkles,
-  Download,
-  ChevronDown,
-  ChevronUp,
-} from 'lucide-react';
+import { Bot, Image, MessageSquare, Mic, Brain, Sparkles, Download, ChevronDown, ChevronUp } from 'lucide-react';
 
 import image1 from './images/1.jpg';
 import image2 from './images/2.jpg';
@@ -23,6 +13,7 @@ function App() {
   const featuresRef = useRef(null);
   const downloadRef = useRef(null);
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [assetsLoaded, setAssetsLoaded] = useState(false);
 
   const scrollToFeatures = () => {
     featuresRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -33,28 +24,50 @@ function App() {
   };
 
   useEffect(() => {
+    // Preload images with link tags in <head>
     const preloadImages = () => {
-        sliderImages.forEach((src) => {
-            const link = document.createElement('link');
-            link.rel = 'preload';
-            link.href = src;
-            link.as = 'image';
-            document.head.appendChild(link);
-        });
+      sliderImages.forEach((src) => {
+        const link = document.createElement('link');
+        link.rel = 'preload';
+        link.href = src;
+        link.as = 'image';
+        document.head.appendChild(link); // Adding the preload <link> to <head>
+      });
     };
 
     preloadImages();
 
-  // Clean up preload links on component unmount
-  return () => {
-    document.querySelectorAll('link[rel="preload"]').forEach((link) => {
-      if (sliderImages.includes(link.href)) {
-        document.head.removeChild(link);
-      }
-    });
-  };
-}, []);
+    // Cleanup preload links on component unmount
+    return () => {
+      document.querySelectorAll('link[rel="preload"]').forEach((link) => {
+        if (sliderImages.includes(link.href)) {
+          document.head.removeChild(link); // Removing preload links
+        }
+      });
+    };
+  }, []);
 
+  useEffect(() => {
+    // Preload images by loading them as Image objects
+    const preloadImageObjects = async () => {
+      try {
+        const imagePromises = sliderImages.map(src => {
+          return new Promise((resolve, reject) => {
+            const img = new Image();
+            img.src = src;
+            img.onload = resolve;
+            img.onerror = reject;
+          });
+        });
+        await Promise.all(imagePromises);
+        setAssetsLoaded(true); // Mark images as loaded
+      } catch (error) {
+        console.error('Error preloading images:', error);
+      }
+    };
+
+    preloadImageObjects();
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
