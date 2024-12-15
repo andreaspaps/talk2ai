@@ -33,29 +33,6 @@ function App() {
   };
 
   useEffect(() => {
-    // Preload the first image
-    const preloadFirstImage = () => {
-      const link = document.createElement('link');
-      link.rel = 'preload';
-      link.href = image1; // This will be the first image in the array
-      link.as = 'image';
-      document.head.appendChild(link);
-
-      console.log(`Preloading first image: ${image1}`);
-    };
-
-    preloadFirstImage();
-
-    // Cleanup on unmount
-    return () => {
-      const preloadLink = document.querySelector(`link[href="${image1}"]`);
-      if (preloadLink) {
-        document.head.removeChild(preloadLink);
-      }
-    };
-  }, []);
-
-  useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % sliderImages.length);
     }, 4000);
