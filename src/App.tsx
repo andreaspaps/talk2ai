@@ -33,16 +33,16 @@ function App() {
   };
 
   useEffect(() => {
-    // Preload the image
-    const link = document.createElement('link');
-    link.rel = 'preload';
-    link.href = '/images/1.jpg'; // Path to your image
-    link.as = 'image';
-    document.head.appendChild(link);
-    
-    // Cleanup when component unmounts
-    return () => document.head.removeChild(link);
-  }, []);
+  // Preload the first slider image
+  const link = document.createElement('link');
+  link.rel = 'preload';
+  link.href = '/images/1.jpg'; // Ensure the image path is correct
+  link.as = 'image';
+  link.onload = () => console.log('Image preloaded successfully');
+  document.head.appendChild(link);
+
+  return () => document.head.removeChild(link); // Cleanup on unmount
+}, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
