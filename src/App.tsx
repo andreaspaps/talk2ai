@@ -79,7 +79,6 @@ function App() {
       <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900/30 via-blue-900/30 to-teal-900/30" />
         <div className="absolute inset-0" style={{
-      //  backgroundImage: "url('/api/placeholder/2574/1600')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           opacity: 0.01
