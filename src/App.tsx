@@ -88,6 +88,16 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-900 text-white">
+      {/* Preload the LCP Image */}
+      <div className="hidden">
+        <img
+          src={sliderImages[0]}
+          alt="Preloaded First Slide"
+          loading="eager"
+          fetchpriority="high"
+        />
+      </div>
+      
       {/* Hero Section */}
       <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900/30 via-blue-900/30 to-teal-900/30" />
