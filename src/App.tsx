@@ -33,14 +33,23 @@ function App() {
   };
 
   useEffect(() => {
+  sliderImages.forEach((src) => {
     const link = document.createElement('link');
     link.rel = 'preload';
-    link.href = image1; // Use the processed path
+    link.href = src;
     link.as = 'image';
     document.head.appendChild(link);
+  });
 
-    return () => document.head.removeChild(link);
-  }, []);
+  return () => {
+    document.querySelectorAll('link[rel="preload"]').forEach((link) => {
+      if (sliderImages.includes(link.href)) {
+        document.head.removeChild(link);
+      }
+    });
+  };
+}, []);
+
 
   useEffect(() => {
     const interval = setInterval(() => {
