@@ -198,7 +198,7 @@ function App() {
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+                <h2 className="text-xl font-semibold mb-2">{feature.title}</h2>
                 <p className="text-gray-400">{feature.description}</p>
               </div>
             ))}
@@ -236,9 +236,9 @@ function App() {
       <div ref={downloadRef} className="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
         <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-3xl text-center">
           <div className="animate-on-scroll opacity-0">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">
+            <h3 className="text-3xl md:text-4xl font-bold mb-8">
               Install Now for Unlimited AI Chat and Image Creation
-            </h2>
+            </h3>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="https://play.google.com/store/apps/details?id=com.aichatbot.free&utm_source=website&utm_medium=referral"
