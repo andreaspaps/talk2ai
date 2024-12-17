@@ -38,6 +38,10 @@ export default defineConfig({
         {
           src: 'src/hero-img11.jpg', // Example thumbnail image
           dest: '' // Places it in the root of dist
+        },
+        {
+          src: 'src/favicon.ico', // Example thumbnail image
+          dest: '' // Places it in the root of dist
         }
       ]
     })
