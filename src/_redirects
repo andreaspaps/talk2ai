@@ -1,6 +1,7 @@
 # Serve static files with 200 status
 /robots.txt                    /robots.txt   200
 /thumbnail.jpg                 /thumbnail.jpg   200
+/favicon.ico                 /favicon.ico   200
 /android-chrome-192x192.png    /android-chrome-192x192.png   200
 /privacy.html                  /privacy.html   200
 /top-10-free-ai-image-generation-apps.html     /top-10-free-ai-image-generation-apps.html   200
