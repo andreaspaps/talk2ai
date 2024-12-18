@@ -75,7 +75,7 @@ function App() {
                 Free AI Chatbot & Image Generator
               </h1>
               <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl animate-fade-in mx-auto lg:mx-0">
-                Unlimited AI chat with voice conversations and high quality image generation - No Sign-Up - No ads!
+                Unlimited AI chat with voice conversations and high quality image generation - No Sign-Up, No ads!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12 animate-fade-in">
                 <button
