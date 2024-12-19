@@ -132,28 +132,29 @@ const App: React.FC = () => {
                   Learn More
                 </button>
               </div>
-              {/* Social Proof */}
-              <div className="space-y-4 animate-fade-in">
+              {/* Updated Social Proof section with better mobile spacing */}
+              <div className="space-y-4 animate-fade-in mb-12 lg:mb-0">
                 <div className="flex justify-center lg:justify-start">
                   <p className="text-gray-300 text-lg"></p>
                 </div>
                 <div className="flex justify-center lg:justify-start">
-                  <a
-                    href="https://www.buymeacoffee.com/freeaichat"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block"
-                  >
-                    <img
-                      src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png"
-                      alt="Buy Me A Coffee"
-                      className="h-[50px] w-[180px]"
-                    />
-                  </a>
+                  <div className="flex justify-center w-full lg:justify-start">
+                    <a
+                      href="https://www.buymeacoffee.com/freeaichat"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block mx-auto lg:mx-0"
+                    >
+                      <img
+                        src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png"
+                        alt="Buy Me A Coffee"
+                        className="h-[50px] w-[180px]"
+                      />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-
             {/* Mobile Phone Frame with Slider */}
             <div className="flex-1 flex justify-center items-center animate-fade-in lg:pr-4">
               <div className="relative w-[320px] h-[640px] rounded-[3rem] bg-gray-800 p-4 shadow-xl">
