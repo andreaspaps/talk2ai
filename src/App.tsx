@@ -148,7 +148,7 @@ const App: React.FC = () => {
                       <img
                         src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png"
                         alt="Buy Me A Coffee"
-                        className="h-[50px] w-[180px] .rounded-\[3rem\]"
+                        className="h-[50px] w-[180px] rounded-full"
                       />
                     </a>
                   </div>
