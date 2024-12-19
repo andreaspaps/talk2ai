@@ -163,7 +163,7 @@ const App: React.FC = () => {
                   </a>
                 </div>
               </div>
-            
+            </div>
 
             {/* Mobile Phone Frame with Slider */}
             <div className="flex-1 flex justify-center items-center animate-fade-in lg:pr-4">
