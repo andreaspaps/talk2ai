@@ -133,7 +133,7 @@ const App: React.FC = () => {
                 </button>
               </div>
               {/* Updated Social Proof section with better mobile spacing */}
-              <div className="space-y-4 animate-fade-in mb-12 lg:mb-0">
+              <div className="space-y-3 animate-fade-in mb-12 lg:mb-0">
                 <div className="flex justify-center lg:justify-start">
                   <p className="text-gray-300 text-lg"></p>
                 </div>
@@ -148,7 +148,7 @@ const App: React.FC = () => {
                       <img
                         src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png"
                         alt="Buy Me A Coffee"
-                        className="h-[50px] w-[180px] rounded-lg"
+                        className="h-[50px] w-[180px] .rounded-\[3rem\]"
                       />
                     </a>
                   </div>
