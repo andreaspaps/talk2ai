@@ -135,7 +135,7 @@ const App: React.FC = () => {
               {/* Social Proof */}
               <div className="space-y-4 animate-fade-in">
                 <div className="flex justify-center lg:justify-start">
-                  <p className="text-gray-300 text-lg">Your support means everything!</p>
+                  <p className="text-gray-300 text-lg"></p>
                 </div>
                 <div className="flex justify-center lg:justify-start">
                   <a
@@ -147,7 +147,7 @@ const App: React.FC = () => {
                     <img
                       src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png"
                       alt="Buy Me A Coffee"
-                      className="h-[60px] w-[217px]"
+                      className="h-[50px] w-[180px]"
                     />
                   </a>
                 </div>
