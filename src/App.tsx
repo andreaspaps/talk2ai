@@ -133,21 +133,6 @@ const App: React.FC = () => {
                 </button>
               </div>
               {/* Social Proof */}
-              <div className="space-y-4 animate-fade-in">
-                <div className="flex justify-center lg:justify-start">
-                  <a
-                    href="https://www.producthunt.com/posts/free-ai-chatbot-image-generator"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block"
-                  >
-                    <img
-                      src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=668996&theme=dark"
-                      alt="Free AI Chatbot and Image Generator - Product Hunt"
-                      className="w-[250px] h-[54px]"
-                    />
-                  </a>
-                </div>
                 <div className="flex justify-center lg:justify-start">
                   <a
                     href="https://www.buymeacoffee.com/freeaichat"
