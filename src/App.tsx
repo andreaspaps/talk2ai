@@ -104,11 +104,22 @@ function App() {
     />
   </a>
 </div>
-<div className="mt-4 animate-fade-in mb-5 flex justify-center lg:justify-start">
-  <a href="https://www.buymeacoffee.com/freeaichat" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-</div>
-  </div>
-            
+<div className="flex justify-center lg:justify-start">
+                  <a
+                    href="https://www.buymeacoffee.com/freeaichat"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block"
+                  >
+                    <img
+                      src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png"
+                      alt="Buy Me A Coffee"
+                      className="h-[60px] w-[217px]"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>    
 
             {/* Mobile Phone Frame with Slider */}
             <div className="flex-1 flex justify-center items-center animate-fade-in lg:pr-4">
