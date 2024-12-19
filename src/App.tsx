@@ -107,7 +107,7 @@ function App() {
 <div className="mt-4 animate-fade-in mb-5 flex justify-center lg:justify-start">
   <a href="https://www.buymeacoffee.com/freeaichat" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 </div>
-
+  </div>
             
 
             {/* Mobile Phone Frame with Slider */}
