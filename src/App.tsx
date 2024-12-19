@@ -133,7 +133,7 @@ const App: React.FC = () => {
                 </button>
               </div>
               {/* Updated Social Proof section with better mobile spacing */}
-              <div className="space-y-3 animate-fade-in mb-12 lg:mb-0">
+              <div className="space-y-1 animate-fade-in mb-12 lg:mb-0">
                 <div className="flex justify-center lg:justify-start">
                   <p className="text-gray-300 text-lg"></p>
                 </div>
