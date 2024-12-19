@@ -104,7 +104,7 @@ function App() {
     />
   </a>
 </div>
-<div className="flex justify-center lg:justify-start">
+<div className="mt-4 animate-fade-in mb-5 flex justify-center lg:justify-start">
                   <a
                     href="https://www.buymeacoffee.com/freeaichat"
                     target="_blank"
